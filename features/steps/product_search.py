@@ -11,6 +11,14 @@ SEARCH_SUBMIT = (By.NAME, 'btnK')
 def open_google(context):
     context.driver.get('https://www.google.com/')
 
+@given('open Stackoverflow page')
+def open_main(context):
+    context.driver.get('https://stackoverflow.com/users/signup/')
+
+@given('open Amazon page')
+def open_main(context):
+    context.driver.get('https://www.amazon.com/')
+
 
 @when('Input {search_word} into search field')
 def input_search(context, search_word):
