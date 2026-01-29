@@ -16,27 +16,27 @@
 
 #Homework#4
 
-#Feature: target circle page
-#
-#Scenario: User Open target circle page
-#    Given Open target circle page
-#    Then Verify two story cards under unlock added value
+Feature: target circle page
 
-#Feature: add target product to cart
-#
-#  Scenario: User Open target circle page
-#    Given Open target main page
-#    When Search for product
-#    Then add product to cart
-#    Then view cart and checkout
-#    Then Verify cart has individual item
+Scenario: User Open target circle page
+    Given Open target circle page
+    Then Verify two story cards under unlock added value
+
+Feature: add target product to cart
+
+  Scenario: User Open target circle page
+    Given Open target main page
+    When Search for product
+    Then add product to cart
+    Then view cart and checkout
+    Then Verify cart has individual item
 
 #Homework #5
 
-Feature: Tests for product page
-
-    Scenario: Verify user can select color
-        Given Open target product A-84173947 page
-#        When click on shirt color
-        Then Verify user can click through colors
+#Feature: Tests for product page
+#
+#    Scenario: Verify user can select color
+#        Given Open target product A-84173947 page
+##        When click on shirt color
+#        Then Verify user can click through colors
 
