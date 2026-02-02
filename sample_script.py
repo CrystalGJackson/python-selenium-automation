@@ -40,23 +40,23 @@ driver.maximize_window()
 #
 #
 # populate search field
-search = driver.find_element(By.NAME, 'q')
-search.clear()
-search.send_keys('Car')
-
-wait for 4 sec
-sleep(4)
-
-# click search button
-driver.find_element(By.NAME, 'btnK').click()
-
-# verify search results
-assert 'car'.lower() in driver.current_url.lower(), f"Expected query not in {driver.current_url.lower()}"
-print('Test Passed')
-
-driver.quit()
-
-driver.wait.until(
-     EC.element_to_be_clickable(search_btn),
-
- ).click()
+# search = driver.find_element(By.NAME, 'q')
+# search.clear()
+# search.send_keys('Car')
+#
+# wait for 4 sec
+# sleep(4)
+#
+# # click search button
+# driver.find_element(By.NAME, 'btnK').click()
+#
+# # verify search results
+# assert 'car'.lower() in driver.current_url.lower(), f"Expected query not in {driver.current_url.lower()}"
+# print('Test Passed')
+#
+# driver.quit()
+#
+# driver.wait.until(
+#      EC.element_to_be_clickable(search_btn),
+#
+#  ).click()
